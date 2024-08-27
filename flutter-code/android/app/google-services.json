@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "483822623768",
+    "project_id": "homeapp-6064f",
+    "storage_bucket": "homeapp-6064f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:483822623768:android:327ac590403b747c61b76d",
+        "android_client_info": {
+          "package_name": "com.homeapp.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB3XdL3XVkkq5lR0SObjLTAuVsyzurTUH4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
