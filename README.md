@@ -75,10 +75,11 @@ By structuring the system this way, it promotes code reuse and provides a scalab
 ## Usage
 - The ESP32 handles sensor readings and communicates with the Flutter app via MQTT.
 - The app displays real-time sensor data and allows users to control the door lock and monitor home conditions remotely.
+  
+## Documentation
+- [Class Diagram](docs/uml-diagram.png)
 
 ## License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## Documentation
-- [Class Diagram](docs/OOP uml diagram.png)
 
