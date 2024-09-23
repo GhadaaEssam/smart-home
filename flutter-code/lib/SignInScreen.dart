@@ -138,8 +138,7 @@ class _SignInScreenState extends State<SignInScreen> {
                         
                           ),
                           
-                        
-
+                
                         TextButton(
                           onPressed: () {
                             Navigator.push(context, MaterialPageRoute(builder: (context) => SignUpScreen()));

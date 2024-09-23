@@ -18,12 +18,18 @@ class _SignUpScreenState extends State<SignUpScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: SingleChildScrollView(  // Wrap everything in SingleChildScrollView
+      body: SingleChildScrollView(
+        // Wrap everything in SingleChildScrollView
         child: Container(
-          height: MediaQuery.of(context).size.height,  // Ensure the container takes full screen height
+          height: MediaQuery.of(context)
+              .size
+              .height, // Ensure the container takes full screen height
           decoration: BoxDecoration(
             gradient: LinearGradient(
-              colors: [Color(0xFF1C3150), Color(0xFFDBC6C0)],  // Same gradient colors
+              colors: [
+                Color(0xFF1C3150),
+                Color(0xFFDBC6C0)
+              ], // Same gradient colors
               begin: Alignment.topLeft,
               end: Alignment.bottomRight,
             ),
@@ -33,15 +39,16 @@ class _SignUpScreenState extends State<SignUpScreen> {
             child: Stack(
               children: [
                 Positioned(
-                  top: 60,  // Vertical position
+                  top: 60, // Vertical position
                   left: 0,
                   right: 0,
                   child: Container(
-                    width: 200,  // Fixed width
-                    height: 200,  // Fixed height
+                    width: 200, // Fixed width
+                    height: 200, // Fixed height
                     decoration: BoxDecoration(
                       image: DecorationImage(
-                        image: AssetImage('assets/Smart home-pana.png'),  // Same image path
+                        image: AssetImage(
+                            'assets/Smart home-pana.png'), // Same image path
                         fit: BoxFit.contain,
                       ),
                     ),
@@ -50,21 +57,32 @@ class _SignUpScreenState extends State<SignUpScreen> {
                 Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    SizedBox(height: 160),  // Adjust this to create space for the image
+                    SizedBox(
+                        height:
+                            160), // Adjust this to create space for the image
                     TextField(
                       onChanged: (value) {
                         username = value;
                       },
                       decoration: InputDecoration(
                         hintText: 'Username',
-                        hintStyle: TextStyle(color: Color.fromARGB(255, 1, 19, 49)),  // Hint text color
-                        prefixIcon: Icon(Icons.person, color: Color.fromARGB(255, 1, 19, 49)),  // Username icon inside the box
-                        border: InputBorder.none,  // No default border
+                        hintStyle: TextStyle(
+                            color: Color.fromARGB(
+                                255, 1, 19, 49)), // Hint text color
+                        prefixIcon: Icon(Icons.person,
+                            color: Color.fromARGB(255, 1, 19,
+                                49)), // Username icon inside the box
+                        border: InputBorder.none, // No default border
                         enabledBorder: UnderlineInputBorder(
-                          borderSide: BorderSide(color: Color.fromARGB(255, 1, 19, 49), width: 2.0),  // Thicker bottom border when not focused
+                          borderSide: BorderSide(
+                              color: Color.fromARGB(255, 1, 19, 49),
+                              width:
+                                  2.0), // Thicker bottom border when not focused
                         ),
                         focusedBorder: UnderlineInputBorder(
-                          borderSide: BorderSide(color: Color.fromARGB(255, 1, 19, 49), width: 2.5),  // Thicker bottom border when focused
+                          borderSide: BorderSide(
+                              color: Color.fromARGB(255, 1, 19, 49),
+                              width: 2.5), // Thicker bottom border when focused
                         ),
                       ),
                     ),
@@ -75,14 +93,23 @@ class _SignUpScreenState extends State<SignUpScreen> {
                       },
                       decoration: InputDecoration(
                         hintText: 'Email',
-                        hintStyle: TextStyle(color: Color.fromARGB(255, 1, 19, 49)),  // Hint text color
-                        prefixIcon: Icon(Icons.email, color: Color.fromARGB(255, 1, 19, 49)),  // Email icon inside the box
-                        border: InputBorder.none,  // No default border
+                        hintStyle: TextStyle(
+                            color: Color.fromARGB(
+                                255, 1, 19, 49)), // Hint text color
+                        prefixIcon: Icon(Icons.email,
+                            color: Color.fromARGB(
+                                255, 1, 19, 49)), // Email icon inside the box
+                        border: InputBorder.none, // No default border
                         enabledBorder: UnderlineInputBorder(
-                          borderSide: BorderSide(color: Color.fromARGB(255, 1, 19, 49), width: 2.0),  // Thicker bottom border when not focused
+                          borderSide: BorderSide(
+                              color: Color.fromARGB(255, 1, 19, 49),
+                              width:
+                                  2.0), // Thicker bottom border when not focused
                         ),
                         focusedBorder: UnderlineInputBorder(
-                          borderSide: BorderSide(color: Color.fromARGB(255, 1, 19, 49), width: 2.5),  // Thicker bottom border when focused
+                          borderSide: BorderSide(
+                              color: Color.fromARGB(255, 1, 19, 49),
+                              width: 2.5), // Thicker bottom border when focused
                         ),
                       ),
                     ),
@@ -94,14 +121,23 @@ class _SignUpScreenState extends State<SignUpScreen> {
                       obscureText: true,
                       decoration: InputDecoration(
                         hintText: 'Password',
-                        hintStyle: TextStyle(color: Color.fromARGB(255, 1, 19, 49)),  // Hint text color
-                        prefixIcon: Icon(Icons.lock, color: Color.fromARGB(255, 1, 19, 49)),  // Password icon inside the box
-                        border: InputBorder.none,  // No default border
+                        hintStyle: TextStyle(
+                            color: Color.fromARGB(
+                                255, 1, 19, 49)), // Hint text color
+                        prefixIcon: Icon(Icons.lock,
+                            color: Color.fromARGB(255, 1, 19,
+                                49)), // Password icon inside the box
+                        border: InputBorder.none, // No default border
                         enabledBorder: UnderlineInputBorder(
-                          borderSide: BorderSide(color: Color.fromARGB(255, 1, 19, 49), width: 2.0),  // Thicker bottom border when not focused
+                          borderSide: BorderSide(
+                              color: Color.fromARGB(255, 1, 19, 49),
+                              width:
+                                  2.0), // Thicker bottom border when not focused
                         ),
                         focusedBorder: UnderlineInputBorder(
-                          borderSide: BorderSide(color: Color.fromARGB(255, 1, 19, 49), width: 2.5),  // Thicker bottom border when focused
+                          borderSide: BorderSide(
+                              color: Color.fromARGB(255, 1, 19, 49),
+                              width: 2.5), // Thicker bottom border when focused
                         ),
                       ),
                     ),
@@ -124,13 +160,17 @@ class _SignUpScreenState extends State<SignUpScreen> {
                       child: ElevatedButton(
                         onPressed: () async {
                           try {
-                            UserCredential userCredential = await _auth.createUserWithEmailAndPassword(
+                            UserCredential userCredential =
+                                await _auth.createUserWithEmailAndPassword(
                               email: email,
                               password: password,
                             );
 
                             // Save the user data in Firestore
-                            await _firestore.collection('users').doc(userCredential.user?.uid).set({
+                            await _firestore
+                                .collection('users')
+                                .doc(userCredential.user?.uid)
+                                .set({
                               'username': username,
                               'email': email,
                             });
@@ -143,7 +183,8 @@ class _SignUpScreenState extends State<SignUpScreen> {
                               context: context,
                               builder: (context) => AlertDialog(
                                 title: Text('Verify your email'),
-                                content: Text('A verification email has been sent to $email. Please verify your email before logging in.'),
+                                content: Text(
+                                    'A verification email has been sent to $email. Please verify your email before logging in.'),
                                 actions: [
                                   TextButton(
                                     onPressed: () {
@@ -159,8 +200,10 @@ class _SignUpScreenState extends State<SignUpScreen> {
                           }
                         },
                         style: ButtonStyle(
-                          backgroundColor: MaterialStateProperty.all(Colors.transparent),
-                          overlayColor: MaterialStateProperty.all(Colors.transparent),
+                          backgroundColor:
+                              MaterialStateProperty.all(Colors.transparent),
+                          overlayColor:
+                              MaterialStateProperty.all(Colors.transparent),
                           padding: MaterialStateProperty.all(EdgeInsets.zero),
                         ),
                         child: Text(
@@ -177,19 +220,27 @@ class _SignUpScreenState extends State<SignUpScreen> {
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        Text('Already have an account?',
-                          style: TextStyle(color: Color.fromARGB(255, 1, 19, 49),), 
-                        
+                        Text(
+                          'Already have an account?',
+                          style: TextStyle(
+                            color: Color.fromARGB(255, 1, 19, 49),
                           ),
-                          
-                        
-
+                        ),
                         TextButton(
                           onPressed: () {
-                            Navigator.push(context, MaterialPageRoute(builder: (context) => SignInScreen()));
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => SignInScreen()));
                           },
-                          child: Text('Sign In',
-                          style: TextStyle(color: Color.fromARGB(255, 31, 51, 82),fontWeight: FontWeight.bold,fontSize: 15,),),
+                          child: Text(
+                            'Sign In',
+                            style: TextStyle(
+                              color: Color.fromARGB(255, 31, 51, 82),
+                              fontWeight: FontWeight.bold,
+                              fontSize: 15,
+                            ),
+                          ),
                         ),
                       ],
                     ),
